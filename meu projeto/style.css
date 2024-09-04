@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'chocolate';
+    src: url('fontes/yogurt.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'mango';
+    src: url('fontes/mangoshake.otf') format('opentype');
+}
+
+:root{
+    --cor0: #3EBFFF;
+   --cor1: #fb5c00;
+   --cor2: #ff7364;
+   --cor3: #34D5B5;
+   --cor4: #31665c;
+   
+   --fonte-padrao: Arial, Verdana, sans-serif; 
+   --fonte-destaque: 'chocolate'; 
+   ---fonte-principal:'mango';
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #3ebfff23;
+}
+
+header{
+    min-height:100px;
+    background-image:linear-gradient(to top, var(--cor0), var(--cor3));
+    padding: 10px 0px 0px 10px;
+}
+header>h1{
+    padding-top: 20px;
+    color: var(--cor1);
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    font-size: 2.5em;
+}
+
+nav{
+    background-color: var(--cor0);
+    
+}
+nav>a{
+    text-decoration: none;
+    color: var(--cor1);
+    font-family:var(---fonte-principal);
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+nav>a:hover{
+    color: var(--cor2);
+    background-color:var(--cor3);
+    padding: 0px;
+   
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.226);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+article h1{
+    font-family: var(---fonte-principal);
+    text-align: center;
+    padding: 20px 0px;
+    color: var(--cor2);
+    font-size: 2em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.322);
+}
+article>h2{
+    text-align: left;
+    color: var(--cor2);
+    background-image: linear-gradient(to right, var(--cor3), transparent);
+    margin: 10px 0px;
+
+}
+article>p{
+    text-align: justify;
+    text-indent: 1.2em;
+    margin: 15px 15px;
+    line-height: 1.5em;
+    font-family: var(--fonte-padrao);
+}
+main img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+footer{
+    background-color: var(--cor3);
+    color:var(--cor2);
+    height: 60px;
+    text-align: center;
+    font-family: var(---fonte-principal);
+    font-size: 1.5em;
+    padding: 10px;
+}
+footer>p{
+    padding-bottom: 10px;
+}
+footer>img{
+    width: 20px;
+
+}

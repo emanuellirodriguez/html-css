@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/*
+HTML é ID = em CSS é #
+HTML é class = em CSS é .
+*/
+@font-face {
+    font-family: 'love';
+    src: url('love larry ttf.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'cute';
+    src: url('Cute Notes.ttf') format('truetype');
+}
+body{
+    background-image: linear-gradient(to right,#F2E7DC, #A9D9D0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: #228a77 ;
+    font-family: 'love';
+}
+h2{
+    color: #b8732efa ;
+}
+
+h1#principal{
+    text-align: center;
+    background-color: #F2E7DC;
+    font-family: 'cute';
+}
+.basico{
+    color: #6F8AB7;
+    font-weight: bolder;
+}
+.intermediario{
+    color: #F76C5E;
+}
+.avancado{
+    color: #DE3C4B;
+}
